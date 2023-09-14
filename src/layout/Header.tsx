@@ -1,4 +1,6 @@
 import Button from "../Components/UI/Button";
+import { navLinks } from "../constants";
+import { ILink } from "../types/types";
 
 const Header = () => {
   return (
@@ -11,17 +13,15 @@ const Header = () => {
         </a>
         <nav className="hidden lg:block duration-300 ease-in-out overflow-hidden">
           <ul className="lg:flex lg:space-x-4 font-medium  text-black">
-            <li>
-              <a className=" text-black hover:text-orange-500" href="#">
-                Home
+            {
+                navLinks?.map((link:ILink)=>(
+                    <li>
+              <a className=" text-black hover:text-orange-500" href={link.link}>
+                {link.title}
               </a>
             </li>
-           
-            <li>
-              <a className=" text-black hover:text-orange-500" href="#">
-                About
-              </a>
-            </li>
+                ))
+            }
           </ul>
         </nav>
         <div className="hidden items-center justify-end md:flex ">

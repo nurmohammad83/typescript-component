@@ -1,4 +1,15 @@
-[
+export const navLinks = [
+  {
+    title: "Home",
+    link: "/",
+  },
+  {
+    title: "About",
+    link: "/about",
+  },
+];
+
+export const products = [
   {
     model: "AMD Ryzen 5 5600X Gaming PC",
     image: "https://live.staticflickr.com/65535/52522584794_4a9898a992_o.jpg",
