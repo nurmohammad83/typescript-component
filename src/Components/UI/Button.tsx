@@ -21,11 +21,11 @@ const Button = ({children,color='primary',variant='filled'}:ButtonProps) => {
 
     const colors:IColor = {
         primary:
-          "bg-blue-600 hover:bg-blue-600 hover:text-white text-black  border-blue-600",
+          "bg-blue-600 hover:bg-blue-700 hover:text-black text-black  border-blue-600",
         success:
-          "bg-green-500 hover:bg-green-600 hover:text-white text-white border-green-600",
+          "bg-green-500 hover:bg-green-600 hover:text-black text-black border-green-600",
           secondary:
-          "bg-yellow-500 hover:bg-yellow-600 hover:text-white text-white border-yellow-600",
+          "bg-yellow-500 hover:bg-yellow-600 hover:text-black text-black border-yellow-600",
       };
  
       const variants:IVariants = {
