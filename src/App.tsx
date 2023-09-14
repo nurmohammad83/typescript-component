@@ -1,12 +1,12 @@
-import Button from './Components/UI/Button'
+import Root from "./layout/Root";
 
-const App = () => {
 
+function App() {
   return (
-    <div className='h-screen w-full flex justify-center items-center'>
-      <Button color='success' variant='filled'>Button</Button>
+    <div>
+      <Root />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

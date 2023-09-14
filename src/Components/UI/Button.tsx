@@ -21,7 +21,7 @@ const Button = ({children,color='primary',variant='filled'}:ButtonProps) => {
 
     const colors:IColor = {
         primary:
-          "bg-blue-600 hover:bg-blue-600 hover:text-white text-white  border-blue-600",
+          "bg-blue-600 hover:bg-blue-600 hover:text-white text-black  border-blue-600",
         success:
           "bg-green-500 hover:bg-green-600 hover:text-white text-white border-green-600",
           secondary:
