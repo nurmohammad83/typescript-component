@@ -2,7 +2,7 @@ import Button from "./UI/Button"
 import hero from '../assets/images/bannerbackground.png'
 const Hero = () => {
   return (
-    <section style={{background:`url(${hero})`, padding: "60px 55px" }}>
+    <section style={{background:`url(${hero})`}}>
       
   <div
     className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
