@@ -4,6 +4,7 @@ type ButtonProps ={
     children:ReactNode
     color?:'primary' | 'secondary' | 'success'
     variant?:'filled' | 'outline'
+    href?:string
 };
 
 type IColor = {
@@ -17,7 +18,7 @@ type IVariants ={
     outline: string;
 };
 
-const Button = ({children,color='primary',variant='filled'}:ButtonProps) => {
+const Button = ({children,color='primary',variant='filled',href='/'}:ButtonProps) => {
 
     const colors:IColor = {
         primary:
@@ -33,9 +34,9 @@ const Button = ({children,color='primary',variant='filled'}:ButtonProps) => {
         outline: "border bg-transparent text-black",
       };
   return (
-    <button className={`${colors[color]} ${variants[variant]} font-semibold py-2 px-6 rounded-md`}>
+    <a href={href} className={`${colors[color]} ${variants[variant]} font-semibold py-2 px-6 rounded-md cursor-pointer`}>
         {children}
-    </button>
+    </a>
   )
 }
 export default Button;

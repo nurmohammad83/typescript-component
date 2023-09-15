@@ -1,8 +1,9 @@
 import Button from "./UI/Button"
-
+import hero from '../assets/images/bannerbackground.png'
 const Hero = () => {
   return (
-    <section className=" text-white">
+    <section style={{background:`url(${hero})`, padding: "60px 55px" }}>
+      
   <div
     className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
   >
@@ -19,7 +20,7 @@ const Hero = () => {
       </p>
 
       <div className="mt-8 flex flex-wrap justify-center gap-4">
-      <Button color="primary">Get Started</Button>
+      <Button href="/products" color="primary">Get Started</Button>
 
         <Button  variant="outline">Learn More</Button>
       </div>
